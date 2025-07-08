@@ -1,16 +1,3 @@
-Of course! Here is a professional `README.md` file and a concise project description based on the files you provided.
-
-### Project Description
-
-This project is a complete compiler for a custom high-level programming language named "Linguine," developed for the Compilers course at the Universidad de Alcalá. Written in Java, the compiler leverages ANTLR 4 for lexical analysis and parsing, and generates Java bytecode in the form of Jasmin assembly files (`.j`). The architecture includes a custom visitor for semantic analysis, a symbol table to manage variables and functions, and a code generator to produce the final executable output. The Linguine language supports features like variable declarations, arithmetic operations, conditional logic (`if-then-else`), `for` and `while` loops, functions, and a `match` statement for pattern matching.
-
----
-
-### README.md
-
-Here is the content for your `README.md` file.
-
-```markdown
 # PL3 - Compiladores: The Linguine Compiler
 
 This project is a complete compiler for a custom programming language named "Linguine," developed as the final project for the "Compilers" (591000) course at the Universidad de Alcalá.
@@ -30,32 +17,6 @@ Linguine is a simple, imperative language with functional features. Its key capa
 - **Built-in I/O**: A `show()` function to print values to the console.
 - **Data Types**: The compiler handles integers, strings, and supports operations between them (like string concatenation).
 
-## Project Structure
-
-The project is organized into several key packages and directories:
-
-```
-.
-├── jasmin/
-│   ├── Ejemplo/      # A small demo ANTLR project for summing numbers
-│   └── tarea/        # Manually written Jasmin files for Part 1 of the assignment
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── CLI/              # Menu.java: The main entry point and command-line interface.
-│   │   │   ├── gramaticas/       # ANTLR grammar files (LinguineLexer.g4, LinguineParser.g4) and generated code.
-│   │   │   ├── IO/               # Utility classes for file and console I/O.
-│   │   │   ├── jasminGen/        # CodeGenerator.java: Helper class to build Jasmin instructions.
-│   │   │   ├── tablaSimbolos/    # Simbolo.java & TablaSimbolos.java: Implementation of the symbol table.
-│   │   │   └── visitors/         # LinguineVisitor.java: The core of the compiler, handling semantic analysis and code generation.
-│   │   └── resources/
-│   │       └── ficheros/
-│   │           └── linguine/     # Example .linguine source files for testing.
-│   └── test/
-│       └── test.j                # Default output file for the generated Jasmin code.
-├── pom.xml                       # Maven project configuration.
-└── README.md                     # This file.
-```
 
 ## How It Works: The Compilation Pipeline
 
@@ -111,6 +72,6 @@ The project is organized into several key packages and directories:
 
 ## Authors
 
+- **Daniel Mihai Bostan Tiron**
 - **Daniel Dichtl Fernandez**
 - **Gonzalo Todo Gabino**
-```
