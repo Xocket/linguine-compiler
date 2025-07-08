@@ -1,0 +1,5 @@
+let x = 2
+match x with
+| 1 -> "One"
+| 2 -> "Two"
+| ? -> "Other";

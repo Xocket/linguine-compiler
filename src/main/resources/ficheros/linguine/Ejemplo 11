@@ -1,0 +1,3 @@
+let x = 'piltrafa'
+let y = 'amongus'
+show(x + y);

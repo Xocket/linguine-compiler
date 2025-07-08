@@ -1,0 +1,3 @@
+fun apply(func, x) -> func(x)
+fun square(x) -> x * x
+let result = apply(square, 5);
